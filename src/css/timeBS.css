@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Urbanist:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+:root{
+    --clr-hot:hsl(48,100%,54%);
+    --clr-cool:rgb(46,189,200);
+    --clr-go:rgb(90,245,125);
+    --clr-alarm:rgb(232,48,213);
+    --clr-logo:hsl(199,82%,45%);
+    --clr-title:hsl(260,73%,54%);
+    --clr-surface:hsl(0,0%,100%);
+    --fnt-time: 'Alumni Sans', sans-serif;
+    --fnt-title: 'Urbanist',  Arial;
+    --fnt-info: 'Cabin',  Arial;
+    --fnt-button: 'Cabin',  Arial;
+    --fnt-clock: 'Orbitron',  Arial;
+    --em-vliner: .15em;
+    --em-circle: .9em;
+    --em-circle-cross-diameter: 2em;
+    --em-thickness: calc(var(--em-circle-cross-diameter) / 10);  
+    --clr-outline: none;
+  }
+
+*,
+* ::after,
+* ::before{
+  box-sizing: border-box;
+  margin:0;
+}
+
+/* code proper*/
+
+.timerbutton {
+  position:relative;
+}
+
+.timerobj{
+	width: 7em;
+	display:grid;
+	place-items:center;
+	grid-template-columns: 3em 1fr  ;
+	grid-template-rows: 1fr;
+  font-family: var(--fnt-button);
+  font-size:1em;
+  color: darkgray;
+  padding-left: 3px;
+}
+
+.toggle {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.play-btn {
+	grid-column: 2/3;
+	grid-row: 1/1;
+	z-index: 999;
+}
+

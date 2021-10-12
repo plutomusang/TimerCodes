@@ -1,0 +1,62 @@
+import * as React from "react";
+import ParseTime from './ParseTime';
+
+interface MyProps {
+    delay?:number;
+    then?: number;
+}
+interface MyState {
+    running?:boolean ;
+    paused?:boolean;
+    delay?:number;
+    then?: number;
+    timer?: ReturnType<typeof setInterval> ;
+}
+
+class TimerClass extends React.Component <MyProps, MyState> {
+    constructor(props: MyProps) {
+        super(props);
+        this.state = {
+            running:false,
+            paused:false,
+            delay:0,
+            then:0            
+        }
+    }
+    reset = () =>{
+
+    }
+    run = () => {
+
+    }
+    start = () => {
+        this.setState({running:false});
+        alert("start");
+    }
+
+    router= () => {
+        this.start();
+        alert("router");
+    }
+
+    stop = () =>{
+        alert("stop");
+    }
+
+    render() {
+        return (
+
+        <div className="timerobj"> 	
+            <div className="timernum"> 
+                <time id="timer">0:00:00</time>	
+            </div>		
+            <button className="play-btn"  onClick ={() => this.router()}>
+                Start
+            </button>
+        </div>
+
+        )   
+    }
+}
+
+export default TimerClass;

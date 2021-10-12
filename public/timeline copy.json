@@ -1,0 +1,40 @@
+{ 
+    "documentId":1,
+    "documentNumber":"cbo-123",
+    "releasingNumber":"rel-123",
+    "isCompleted": false,
+    "documentType": "Transmital",
+    "dateCreated": "08-08-21 8am",
+    "dateCompleted": "08-08-21 8am",
+    "agingNumber": "3Days",
+    "timelineData": [
+            {
+                "personName": "Ran Dome",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis scelerisque odio sit amet dictum. Etiam eget pharetra ligula. Vestibulum eget faucibus nisl. Sed in eros ornare, dapibus erat eu, commodo orci, Pellentesque.",
+                "timeRecieved": "08-08 Tue 3PM",
+                "timeReleased": "4PM",
+                "documentStatus": true,
+                "isLastItem":false,
+                "documentTrackId":1
+            },
+            {
+                "personName": "Lobortis Scelerisque",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus.",
+                "timeRecieved": "08-08 Tue 3PM",
+                "timeReleased": "4PM",
+                "documentStatus": true,
+                "isLastItem":false,
+                "documentTrackId":2
+            },
+            {
+                "personName": "Neque Porro",
+                "description": "Lorem ipsum dolor sit amet.",
+                "timeRecieved": "08-08 Tue 3PM",
+                "timeReleased": "Pending",
+                "documentStatus": false,
+                "isLastItem":true,
+                "documentTrackId":3
+            }                        
+        ]
+}
+    
